@@ -1,0 +1,263 @@
+html, body {
+	background-color: #F7F9FB;
+	font-family: Didot, Times New Roman;
+}
+
+a {
+	text-decoration: none;
+}
+
+aside {
+	display: flex;
+	margin-left: 1rem;
+}
+
+hr {
+	margin: 2rem 0rem 3.5rem 0rem;
+}
+
+/* These styles apply to navbar */
+
+.navbar-menu {
+	background-color: #31708E;
+	display: flex;
+	justify-content: space-around;
+	transition: top 0.5s;
+	position: fixed;
+	width: 100%;
+	top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 10px rgba(0,0,0,10);
+}
+
+.navbar-menu div {
+	display: flex;
+	margin: 1rem;
+}
+
+.navbar-menu a {
+	color: #F7F9FB;
+	text-decoration: none;
+}
+
+.navbar-menu a:hover {
+	text-decoration: underline;
+}
+
+/* Generate the container & format image for aside photo on homepage */
+
+.circular-frame {
+  display: inline-block;
+  position: relative;
+  margin-top: 37px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0,0,0,100);
+}
+
+.circular-frame img {
+  width: auto;
+  height: 100%;
+  margin-left: -25px;
+}
+
+/* Containers for blue & green relief behind image */
+
+#circular-frame-backdrop-one {
+  display: inline-block;
+  position: relative;
+  width: 310px;
+  height: 310px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0px -275px 15px 0px;
+  background-color: #687864;
+  box-shadow: 0 10px 20px rgba(0,0,0,100);
+}
+
+#circular-frame-backdrop-two {
+  display: inline-block;
+  position: relative;
+  width: 315px;
+  height: 315px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: -10px -285px 35px 0px;
+  background-color: #5085A5;
+  box-shadow: 0 10px 20px rgba(0,0,0,100);
+}
+
+/* Main body formatting */
+
+.main-article-container {
+	display: grid;
+	margin: 6rem;
+	margin-top: 3rem;
+}
+
+.main-article-container h1 {
+	grid-column: span 12;
+	display: flex;
+	justify-content: center;
+	padding-top: 1rem;
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+.main-article-container h2 {
+	grid-column: span 12;
+	display: flex;
+	justify-content: center;
+	margin: 0rem 0rem 1rem 0rem;
+	font-size: 1.6rem;
+}
+
+.main-article-container h3 {
+	grid-column: span 12;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 1rem;
+	font-size: 1.2rem;
+}
+
+.homepage-main-text {
+	display: block;
+}
+
+.homepage-main-text p {
+	justify-content: center;
+	font-size: 1.3rem
+}
+
+/* Resume Styles */
+
+.main-article-container-resume {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	margin: 3rem;
+}
+
+.side-menu {
+	background-color: #F7F9FB;
+	border-style: solid;
+	border-width: 0.7rem;
+	border-color: #31708E;
+	display: flex;
+	position: fixed;
+	flex-direction: column;
+	width: 17rem;
+  	align-items: center;
+  	justify-content: space-around;
+    padding: 0rem 2rem 0rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,10);
+    margin-left: -1rem;
+}
+
+.side-menu a {
+	display: flex;
+	color: #31708E;
+	margin: 2rem 0rem 2rem 0rem;
+
+}
+
+.side-menu a:hover {
+	text-decoration: underline;
+
+}
+
+.side-menu img {
+	width: 150px;
+	height: auto;
+	margin: -35px 0px 0px -5px;
+}
+
+.resume-side-menu-circular-frame {
+  display: inline-block;
+  position: relative;
+  margin-top: 2rem;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  z-index: 1;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #31708E;
+}
+
+@media only screen and (max-width: 992px) {
+    /* This CSS will be applied only to phones and other small devices. */
+    .side-menu {
+   	background-color: #31708E;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	transition: top 0.5s;
+	position: fixed;
+	width: 100%;
+	top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 10px rgba(0,0,0,10);
+	}
+
+	.side-menu a {
+	display: flex;
+	justify-content: space-around;
+	color: #F7F9FB;
+	margin: 2rem 0rem 2rem 0rem;
+
+	}
+
+	.side-menu img {
+		width: 75px;
+		height: 75px;
+	}
+
+	.resume-side-menu-circular-frame {
+	  display: inline-block;
+	  position: relative;
+	  margin-top: 2rem;
+	  width: 75px;
+	  height: 75px;
+	  overflow: hidden;
+	  border-radius: 50%;
+	  z-index: 1;
+	  border-style: solid;
+	  border-width: 2px;
+	  border-color: black;
+	}
+}
+
+#resume-basic-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.resume-content p {
+	font-size: 1.2rem;
+}
+
+/* Footer styles */
+
+.footer-container {
+	color: #F7F9FB;
+	justify-content: space-around;
+}
+
+.icon-container {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.copyright {
+	display: flex;
+	list-style: none;
+	color: black;
+	justify-content: center;
+}
+
+

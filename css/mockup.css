@@ -1,0 +1,33 @@
+
+
+.main-article-container {
+	display: grid;
+	margin: 6rem;
+	margin-top: 3rem;
+}
+
+.side-menu {
+	background-color: #31708E;
+	display: flex;
+	justify-content: space-around;
+	transition: top 0.5s;
+	position: fixed;
+	width: 100%;
+	top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 10px rgba(0,0,0,10);
+}
+
+.side-menu div {
+	display: flex;
+	margin: 1rem;
+}
+
+.side-menu a {
+	color: #F7F9FB;
+	text-decoration: none;
+}
+
+.side-menu a:hover {
+	text-decoration: underline;
+}
